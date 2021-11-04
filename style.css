@@ -1,0 +1,273 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+
+
+body{
+    width: 700px;
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+@media screen and (max-width: 700px){
+    body{width: 95%;}
+}
+
+p{
+    font-family: 'Proxima Nova','Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #222222;
+    margin: 18px 0;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+header #course-name{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+    margin-right: auto;
+}
+
+header #mern-container{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 500px){
+    #mern-container .circle{ display: none;}
+}
+
+#mern-container .circle{
+    background-color: #ffee00;
+    border-radius: 100%;
+    transform: rotate(-30deg);
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+#mern-container .mern{ 
+    font-family: 'Proxima Nova','Helvetica', 'Arial', sans-serif;
+    color: #222222;
+    font-weight: bold;
+}
+
+#quiz-name{
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 425px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quiz-name #quiz-name-text{
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pagolin', 'Trebuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    position: absolute;
+    padding: 10px;
+    background-clip: padding-box;
+}
+
+#author-name{
+    font-size: 14px;
+    font-family: 'Proxima Nova','Helvetica', 'Arial', sans-serif;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 18px 0 18px 0;
+}
+
+#introduction{
+    position: relative;
+}
+
+#introduction .strong-word{
+    font-family: 'Proxima Nova','Helvetica', 'Arial', sans-serif;
+    font-size: 32px;
+    color: #222222;
+    margin: 0;
+}
+
+#introduction #start-box{
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    background-size: cover; 
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#start-box #start-button{
+    background-color:  #2196F3;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;    
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+#start-box #start-button:hover{
+    background-color: #0d8bf2;
+}
+
+#ans-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#ans-container .radio-container:hover{
+    background-color: #ddd;
+}
+
+#ans-container .radio-container{
+    background-color: #f1f1f1;
+    display: block;
+    position: relative;
+    padding: 15px 15px 15px 20px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#ans-container .radio-container.noHover{
+    pointer-events: none;
+}
+
+#ans-container .radio-container.active{
+    background-color: #ddd;
+    display: block;
+    position: relative;
+    padding: 15px 15px 15px 20px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+#submit-box{
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    background-size: cover; 
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#submit-box #submit-button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;    
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#submit-box #submit-button:hover{
+    background-color: #46a049;
+}
+
+#result-box{
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    background-size: cover; 
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#result-box #try-again-button{
+    background-color:  #2196F3;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px ;  
+    margin: 4px 2px;
+    cursor: pointer;    
+}
+
+#result-box #try-again-button:hover{
+    background-color: #0d8bf2;
+}
+
+#result-box #mark{
+    font-size: 24px;
+}
+
+#result-box #result-text{
+    font-family: 'Proxima Nova','Helvetica', 'Arial', sans-serif;
+    font-size: 32px;
+    color: #222222;
+    margin: 0;
+}
+
+#result-box #percentage{
+    font-weight: bold;
+    margin: 0;
+}
+
+#ans-container .radio-container.correct{
+    background-color:  #d4edda;
+    display: block;
+    position: relative;
+    padding: 15px 15px 15px 20px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#ans-container .radio-container.wrong{
+    background-color: #f8d7da;
+    display: block;
+    position: relative;
+    padding: 15px 15px 15px 20px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ans-tag{
+    background-color: rgba(0,0,0, 0.2) ;
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    padding: 6px;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
